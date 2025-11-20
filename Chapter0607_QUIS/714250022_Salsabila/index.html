@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategyc Ads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logi">SA</div>
+                <div>
+                    <div style="font-weight: 700;">Strategic Ads</div>
+                    <div style="font-size: 12px;color:black;">Premium & Professional</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#portofolio">Portofolio</a>
+                <a href="#services">Layanan</a>
+                <a href="#contact" class="cta">Kontak</a>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="hero_bg" id="heroBg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero_inner">
+                <div class="kicker">Agensi Kreatif</div>
+                <h1>Menciptakan brand yang berkelas, desain & digital.</h1>
+                <p class="lead">Kami membantu perusahaan dan personal brand tampil berbeda lewat desain yang elegan</p>
+                <div class="hero_actions">
+                    <a class="btn btn--primary" href="#contact">Mulai Proyek</a>
+                    <a class="btn" href="#portofolio">Lihat Portofolio</a>
+               </div>
+            </div>
+        </section>
+
+        <section class="Portofolio" id="Portofolio">
+            <h3>Selected Work</h3>
+            <div class="slider" aria-label="Portofolio slider">
+                <div class="slides" id="slides">
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80" /></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80" /></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80" /></div>
+                </div>
+                <div class="slider_dots" id="dots"></div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="services"><h4>Brand Strategy</h4><p>Riset dan postioning brand</p></div>
+            <div class="services"><h4>UI/UX Design</h4><p>Desain antarmuka premium</p></div>
+            <div class="services"><h4>Content & Campaign</h4><p>Kampanye digital kreatif</p></div>
+            <div class="services"><h4>Motion & Video</h4><p>Video professional</p></div>
+        </section>
+
+        <section class="testimonials">
+            <h3>Client Testimonials</h3>
+            <div class="test-wrap" id="testWrap">
+                <div class="test-row" id="testRow">
+                    <div class="test-card"><p>"Luar Biasa." _ CEO</p></div>
+                    <div class="test-card"><p>"Desain elegan." _ Marketing Lead</p></div>
+                    <div class="test-card"><p>"Eksekusi Sempurna." _ Founder</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Hubungi Kami</h3>
+            <form id="contactForm" novalidate>
+                <input id="name" placeholder="Nama" required>
+                <input id="email" type="email" placeholder="Email" required>
+                <textarea id="message" rows="5" placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn btn--primary">Kirim</button>
+                <div id="formSuccess" style="display: none;color: goldenrod;margin-top: 10px;">Pesan Terkirim!</div>
+            </form>
+        </section>
+
+        <footer>@ <span id="year"></span>Strategyc Ads - All right reserved</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
