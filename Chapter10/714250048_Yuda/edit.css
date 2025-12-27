@@ -1,0 +1,134 @@
+/* edit.css */
+
+/* Reset kecil */
+* {
+    box-sizing: border-box;
+}
+
+/* Background halaman */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #312e81, #7e22ce);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Judul */
+h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Form Card */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 30px 35px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+    animation: fadeUp 0.6s ease;
+}
+
+/* Animasi */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Group */
+p {
+    margin-bottom: 16px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+/* Input & Select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    transition: 0.25s;
+}
+
+/* Focus */
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+}
+
+/* Radio Group */
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+p label input[type="radio"] {
+    margin-top: 5px;
+}
+
+p label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Button Simpan */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+    transition: all 0.3s ease;
+}
+
+/* Hover Button */
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(34,197,94,0.55);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    form {
+        padding: 25px;
+    }
+}

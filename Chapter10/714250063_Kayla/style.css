@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 95%;
+    max-width: 900px; 
+    margin: 20px auto;
+}
+
+header h1 {
+    color: #8e44ad; /* Warna ungu politeknik */
+    margin-top: 10px;
+}
+
+header h3 {
+    color: #8294d5;
+    font-weight: normal;
+}
+
+nav ul {
+    list-style-type: none; /* Ini yang menghilangkan titik hitam */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Warna biru */
+    color: white !important; /* Warna tulisan putih */
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Memberi jarak agar tidak nempel ke tabel */
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Biru agak gelap saat disentuh */
+}
+nav {
+    text-align: left; /* Menaruh tombol tambah data di kiri */
+    margin-bottom: 10px;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antar garis tabel */
+    margin-top: 20px;
+    background-color: white;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+/* Warna selang-seling biar enak dibaca */
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Efek saat baris tabel dilewati mouse */
+table tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.2s;
+}
+
+/* Membuat link Edit & Hapus jadi tombol kotak yang rapi */
+.btn-aksi {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white !important; /* Memaksa warna tulisan jadi putih */
+    display: inline-block;
+    margin: 2px;
+    transition: 0.3s;
+}
+
+/* Warna Oranye untuk Edit */
+.edit {
+    background-color: #f39c12;
+}
+.edit:hover {
+    background-color: #e67e22;
+}
+
+/* Warna Merah untuk Hapus */
+.hapus {
+    background-color: #e74c3c;
+}
+.hapus:hover {
+    background-color: #c0392b;
+}
+
+/* FORMULIR */
+fieldset {
+    border: none; 
+    padding: 0;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Untuk tombol di form pendaftaran dan form edit */
+input[type="submit"], .btn-daftar {
+    background-color: #8e44ad;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #732d91;
+}
+
+/* Biar kotak isian Nama, Sekolah, dll jadi rapi melengkung */
+input[type="text"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Biar ujungnya bulat halus */
+    box-sizing: border-box; /* Biar pas kena padding tetap rapi */
+    font-size: 14px;
+    background-color: #fdfdfd;
+}
+
+/* Biar pas kotak diklik, ada efek warna biru di pinggirnya */
+input[type="text"]:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Merapikan pilihan Laki-laki / Perempuan */
+input[type="radio"] {
+    margin-right: 5px;
+}

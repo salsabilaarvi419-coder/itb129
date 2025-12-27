@@ -8,13 +8,13 @@ if (isset($_POST['daftar'])) {
     // ambil data dari formulir
     $nama = $_POST['nama'];
     $alamat = $_POST['alamat'];
-    $jk = $_POST['jenis_kelamin'];
+    $jenis_kelamin = $_POST['jenis_kelamin'];
     $agama = $_POST['agama'];
-    $sekolah = $_POST['sekolah_asal'];
+    $asal_sekolah = $_POST['asal_sekolah'];
 
     // buat query
-    $sql = "INSERT INTO pendaftaran (nama, alamat, jenis_kelamin, agama, sekolah_asal)
-            VALUE ('$nama', '$alamat', '$jk', '$agama', '$sekolah')";
+    $sql = "INSERT INTO pendaftaran (nama, alamat, jenis_kelamin, agama, asal_sekolah)
+            VALUE ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$asal_sekolah')";
     $query = mysqli_query($db, $sql);
 
     // apakah query simpan berhasil?

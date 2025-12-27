@@ -14,7 +14,7 @@
     <h4>Menu</h4>
     <nav>
         <ul>
-            <li><a href="form-daftar .php">Daftar</a></li>
+            <li><a href="form-daftar.php">Daftar</a></li>
             <li><a href="list-maba.php">Pendaftaran</a></li>
         </ul>
     </nav>

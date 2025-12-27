@@ -26,24 +26,24 @@
             <th>Alamat</th>
             <th>Jenis Kelamin</th>
             <th>Agama</th>
-            <th>Sekolah Asal</th>
+            <th>Asal Sekolah</th>
         </tr>
     </thead>
     <tbody>
 
         <?php
-        $sql = "SELECT * FROM pendaftaram";
+        $sql = "SELECT FROM pendaftaram";
         $query = mysqli_query($db, $sql);
 
         while ($maba = mysqli_fetch_array($query)) {
             echo "<tr>";
 
-            echo "<td>" . $maba['id'] . "</td>";
-            echo "<td>" . $maba['nama'] . "</td>";
-            echo "<td>" . $maba['alamat'] . "</td>";
-            echo "<td>" . $maba['jenis_kelamin'] . "</td>";
-            echo "<td>" . $maba['agama'] . "</td>";
-            echo "<td>" . $maba['sekolah_asal'] . "</td>";
+            echo "<td>" .$maba['id']."</td>";
+            echo "<td>" .$maba['nama']."</td>";
+            echo "<td>" .$maba['alamat']."</td>";
+            echo "<td>" .$maba['jenis_kelamin']."</td>";
+            echo "<td>" .$maba['agama']."</td>";
+            echo "<td>" .$maba['asal_sekolah']."</td>";
 
             echo "<td>";
             echo "<a href='form-edit.php?id=" . $maba['id'] . "'>Edit</a> | ";

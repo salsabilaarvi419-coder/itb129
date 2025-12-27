@@ -37,8 +37,8 @@
                 </select>
             </p>
             <p>
-                <label for="sekolah_asal">Sekolah Asal: </label>
-                <input type="text" name="sekolah_asal" placeholder="sekolah Asal" />
+                <label for="asal_sekolah">Sekolah Asal: </label>
+                <input type="text" name="asal_sekolah" placeholder="asal sekolah" />
             </p>
             <p>
                 <input type="submit" value="daftar" name="daftar" />
