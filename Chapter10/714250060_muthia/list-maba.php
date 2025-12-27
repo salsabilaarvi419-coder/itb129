@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <header>
-            <h3>Pendaftaran Mahaswa Baru</h3>
+            <h1>List Mahasiswa Baru</h1>
         </header>
 
         <nav>
-            <a href="form-daftar.php">[+] Tambah Data</a>
+            <a href="form-daftar.php" ><input type="submit" value="[+] Tambah Data" name="[+] Tambah Data" /></a>
         </nav>
         <br>
 
@@ -56,6 +56,7 @@
             </tbody>
         </table>
         <p> Total: <?php echo mysqli_num_rows($query) ?></p>
+        <a href="index.php" ><input type="submit" value="Kembali" name="Kembali" /></a>
     </div>
 
 </body>

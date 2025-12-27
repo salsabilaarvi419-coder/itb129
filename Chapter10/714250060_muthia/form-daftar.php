@@ -9,7 +9,8 @@
 <body>
     <div class="container">
         <header>
-            <h3>Formulir Pendaftaran Mahasiswa Baru | POLTEKPOS</h3>
+            <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+            <h1>POLTEKPOS</h1>
         </header>
 
         <form action="proses-pendaftaran.php" method="POST">
@@ -17,18 +18,18 @@
 
                 <p>
                     <label for="nama">Nama: </label>
-                    <input type="text" name="nama" placeholder="nama lengkap" />
+                    <input type="text" name="nama" placeholder="nama lengkap" required/>
                 </p>
 
                 <p>
                     <label for="alamat">Alamat: </label>
-                    <textarea name="alamat"></textarea>
+                    <textarea name="alamat" required></textarea>
                 </p>
 
                 <p>
                     <label for="jenis_kelamin">Jenis Kelamin: </label>
                     <label>
-                        <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki
+                        <input type="radio" name="jenis_kelamin" value="laki-laki" > Laki-laki
                     </label>
                     <label>
                         <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
@@ -37,7 +38,7 @@
 
                 <p>
                     <label for="agama">Agama: </label>
-                    <select name="agama">
+                    <select name="agama" required>
                         <option>Islam</option>
                         <option>Kristen</option>
                         <option>Hindu</option>
@@ -48,11 +49,11 @@
 
                 <p>
                     <label for="asal_sekolah">Sekolah Asal: </label>
-                    <input type="text" name="asal_sekolah" placeholder="nama sekolah" />
+                    <input type="text" name="asal_sekolah" placeholder="nama sekolah" required />
                 </p>
 
                 <p>
-                    <input type="submit" value="Daftar" name="daftar" />
+                    <input type="submit" value="Daftar" name="daftar" required />
                 </p>
 
             </fieldset>

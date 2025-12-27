@@ -26,15 +26,17 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Edit Pendaftaran Mahasiswa Baru | POLTEKPOS</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Formulir Edit </h1>
+            <h1>Pendaftaran Mahasiswa Baru</h1>
+        </header>
 
-<header>
-    <h3>Formulir Edit Pendaftaran Mahasiswa Baru | POLTEKPOS</h3>
-</header>
-
-<form action="form-edit.php" method="POST">
+        <form action="form-edit.php" method="POST">
     <fieldset>
 
         <input type="hidden" name="id" value="<?php echo $maba['id']; ?>" />
@@ -81,6 +83,8 @@ if (isset($_GET['id'])) {
 
     </fieldset>
 </form>
+<a href="index.php" ><input type="submit" value="Kembali" name="Kembali" /></a>
+</div>
 
 </body>
 </html>
