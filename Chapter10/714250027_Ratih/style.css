@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+}
+
+h1, h3, h4 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Form Styles */
+fieldset { 
+    border: none; 
+    padding: 0; 
+    margin: 0;
+}
+.container form p { 
+    margin-bottom: 20px; 
+}
+label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 600; 
+    color: #34495e; 
+}
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: auto;
+}
+p label:not([for]) {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+input[type="text"]:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Table Style */
+table {
+    min-width: 1000px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    white-space: nowrap;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* Mempercantik Tombol Aksi di Tabel */
+td a {
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+/* Khusus link Edit */
+td a[href*="edit"] {
+    color: white;
+    border: 1px solid white;
+    margin-right: 5px;
+}
+td a[href*="edit"]:hover {
+    background: #3498db;
+    color: white;
+}
+/* Khusus link Hapus */
+td a[href*="hapus"] {
+    color: white;
+    border: 1px solid white;
+}
+td a[href*="hapus"]:hover {
+    background: #e74c3c;
+    color: white;
+}
+tr:hover { 
+    background-color: #f1f1f1; 
+}
+/* Responsivitas: Agar tabel tidak rusak di HP */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+/* Buttons & Links */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.btn-edit {
+    background-color: #f39c12; 
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.btn-hapus {
+    background-color: #e74c3c; 
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.btn-submit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-edit, .btn-hapus {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 2px;
+    display: inline-block;
+}
+.total {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+.btn:hover { 
+    opacity: 0.8; 
+}
+
+/* Menu List Index */
+.menu-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0;
+}
+.menu-list li { 
+    margin: 15px; 
+}
+.menu-list a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.menu-list a:hover { 
+    background: #3498db; 
+    color: white; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}

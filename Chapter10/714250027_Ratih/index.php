@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa Baru Universitas Logistik dan Bisnis Internasional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h3>Pendaftaran Mahasiswa Baru</h3>
+        <h1>Universitas Logistik dan Bisnis Internasional</h1>
+    </header>
+        <h4>Menu</h4>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="form-daftar.php">Daftar</a></li>
+                <li><a href="list-maba.php">Pendaftar</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

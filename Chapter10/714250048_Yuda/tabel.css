@@ -1,0 +1,109 @@
+/* Container */
+.table-container {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-top: 6px solid #d4af37; /* emas */
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* Judul opsional */
+.table-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 14px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+/* Header */
+table thead {
+    background-color: #0f1c3f; /* biru dinas */
+    color: #ffffff;
+}
+
+table th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* Body */
+table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #1f2937;
+}
+
+/* Zebra */
+table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Hover baris */
+table tbody tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* Aksi */
+.btn-edit,
+.btn-hapus {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+/* Edit */
+.btn-edit {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background-color: #0f1c3f;
+}
+
+/* Hapus */
+.btn-hapus {
+    background-color: #b91c1c;
+    color: #ffffff;
+    margin-left: 6px;
+}
+
+.btn-hapus:hover {
+    background-color: #7f1d1d;
+}
+
+/* Tombol Tambah */
+.btn-tambah {
+    display: inline-block;
+    margin-bottom: 16px;
+    background-color: #d4af37;
+    color: #0f172a;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.btn-tambah:hover {
+    background-color: #b8962e;
+}
